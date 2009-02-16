@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SuperMet' target in the 'SuperMet' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
