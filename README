@@ -1,0 +1,5 @@
+Simple metronome I'm writing to learn some Core Audio stuff.
+
+Most of the code is based on or taken directly from Apple's Metronome iPhone
+sample application.
+
