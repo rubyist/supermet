@@ -13,6 +13,8 @@
     SystemSoundID _soundID;
     NSThread *soundPlayerThread;
     CGFloat duration;
+    NSUInteger beatNumber;
+    NSUInteger patternSubdivision;
     IBOutlet NSTextField *bpmField;
 }
 

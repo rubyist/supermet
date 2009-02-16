@@ -44,7 +44,17 @@
 
 - (void)playSound
 {
-    AudioServicesPlaySystemSound(_soundID);
+    if (patternSubdivision % 4 == 1) {
+        beatNumber++;
+        AudioServicesPlaySystemSound(_soundID);
+    }
+    
+    if (patternSubdivision == 16) {
+        beatNumber = 1;
+        patternSubdivision = 0;
+    }
+    
+    patternSubdivision++;
 }
 
 - (void)startDriverTimer:(id)info
@@ -102,7 +112,9 @@
 
 - (void)startSound
 {
-    self.duration = (60.0 / [bpmField intValue]);
+    self.duration = (60.0 / [bpmField intValue]) / 4; // Really click in 16th notes
+    beatNumber = 1;
+    patternSubdivision = 1;
     [self startDriverThread];
 }
 
