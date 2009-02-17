@@ -35,6 +35,27 @@
     return self;
 }
 
+- (void)loadSubdivisions
+{
+    subdivisionValues[0] = [subDiv1 state];
+    subdivisionValues[1] = [subDiv2 state];
+    subdivisionValues[2] = [subDiv3 state];
+    subdivisionValues[3] = [subDiv4 state];
+    
+    subdivisionValues[4] = [subDiv5 state];
+    subdivisionValues[5] = [subDiv6 state];
+    subdivisionValues[6] = [subDiv7 state];
+    subdivisionValues[7] = [subDiv8 state];
+    subdivisionValues[8] = [subDiv9 state];
+    subdivisionValues[9] = [subDiv10 state];
+    subdivisionValues[10] = [subDiv11 state];
+    subdivisionValues[11] = [subDiv12 state];
+    subdivisionValues[12] = [subDiv13 state];
+    subdivisionValues[13] = [subDiv14 state];
+    subdivisionValues[14] = [subDiv15 state];
+    subdivisionValues[15] = [subDiv16 state];
+}
+
 - (void)dealloc
 {
     AudioServicesDisposeSystemSoundID(_soundID);
@@ -44,9 +65,12 @@
 
 - (void)playSound
 {
+    if (subdivisionValues[patternSubdivision - 1] == 1) {
+        AudioServicesPlaySystemSound(_soundID);
+    }
+    
     if (patternSubdivision % 4 == 1) {
         beatNumber++;
-        AudioServicesPlaySystemSound(_soundID);
     }
     
     if (patternSubdivision == 16) {
@@ -115,6 +139,7 @@
     self.duration = (60.0 / [bpmField intValue]) / 4; // Really click in 16th notes
     beatNumber = 1;
     patternSubdivision = 1;
+    [self loadSubdivisions];
     [self startDriverThread];
 }
 
