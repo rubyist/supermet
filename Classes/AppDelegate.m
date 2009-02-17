@@ -158,6 +158,11 @@
     [self stopSound];
 }
 
+- (IBAction)changeBeat:(id)sender
+{
+    [self loadSubdivisions];
+}
+
 - (void)controlTextDidEndEditing:(NSNotification *)aNotification
 {
     [self startSound];

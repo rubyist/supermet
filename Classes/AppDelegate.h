@@ -42,5 +42,6 @@
 
 - (IBAction)startMetronome:(id)sender;
 - (IBAction)stopMetronome:(id)sender;
+- (IBAction)changeBeat:(id)sender;
 
 @end
