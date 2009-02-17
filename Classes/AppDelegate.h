@@ -10,31 +10,50 @@
 #import <AudioToolbox/AudioServices.h>
 
 @interface AppDelegate : NSObject {
-    SystemSoundID _soundID;
+    SystemSoundID _sound1;
+    SystemSoundID _sound2;
     NSThread *soundPlayerThread;
     CGFloat duration;
     NSUInteger beatNumber;
     NSUInteger patternSubdivision;
     IBOutlet NSTextField *bpmField;
     
-    IBOutlet NSButton *subDiv1;
-    IBOutlet NSButton *subDiv2;
-    IBOutlet NSButton *subDiv3;
-    IBOutlet NSButton *subDiv4;
-    IBOutlet NSButton *subDiv5;
-    IBOutlet NSButton *subDiv6;
-    IBOutlet NSButton *subDiv7;
-    IBOutlet NSButton *subDiv8;
-    IBOutlet NSButton *subDiv9;
-    IBOutlet NSButton *subDiv10;
-    IBOutlet NSButton *subDiv11;
-    IBOutlet NSButton *subDiv12;
-    IBOutlet NSButton *subDiv13;
-    IBOutlet NSButton *subDiv14;
-    IBOutlet NSButton *subDiv15;
-    IBOutlet NSButton *subDiv16;
+    IBOutlet NSButton *instr1_1;
+    IBOutlet NSButton *instr1_2;
+    IBOutlet NSButton *instr1_3;
+    IBOutlet NSButton *instr1_4;
+    IBOutlet NSButton *instr1_5;
+    IBOutlet NSButton *instr1_6;
+    IBOutlet NSButton *instr1_7;
+    IBOutlet NSButton *instr1_8;
+    IBOutlet NSButton *instr1_9;
+    IBOutlet NSButton *instr1_10;
+    IBOutlet NSButton *instr1_11;
+    IBOutlet NSButton *instr1_12;
+    IBOutlet NSButton *instr1_13;
+    IBOutlet NSButton *instr1_14;
+    IBOutlet NSButton *instr1_15;
+    IBOutlet NSButton *instr1_16;
     
-    NSInteger subdivisionValues[16];
+    IBOutlet NSButton *instr2_1;
+    IBOutlet NSButton *instr2_2;
+    IBOutlet NSButton *instr2_3;
+    IBOutlet NSButton *instr2_4;
+    IBOutlet NSButton *instr2_5;
+    IBOutlet NSButton *instr2_6;
+    IBOutlet NSButton *instr2_7;
+    IBOutlet NSButton *instr2_8;
+    IBOutlet NSButton *instr2_9;
+    IBOutlet NSButton *instr2_10;
+    IBOutlet NSButton *instr2_11;
+    IBOutlet NSButton *instr2_12;
+    IBOutlet NSButton *instr2_13;
+    IBOutlet NSButton *instr2_14;
+    IBOutlet NSButton *instr2_15;
+    IBOutlet NSButton *instr2_16;
+    
+    NSInteger instr1Values[16];
+    NSInteger instr2Values[16];
 }
 
 @property (nonatomic, retain) NSThread *soundPlayerThread;

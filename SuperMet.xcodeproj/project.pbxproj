@@ -14,6 +14,7 @@
 		D29F427D0F4A2B6C007F81D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D29F427C0F4A2B6C007F81D0 /* AppDelegate.m */; };
 		D29F42850F4A2F0C007F81D0 /* tock.caf in Resources */ = {isa = PBXBuildFile; fileRef = D29F42840F4A2F0C007F81D0 /* tock.caf */; };
 		D29F428B0F4A2F34007F81D0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29F428A0F4A2F34007F81D0 /* AudioToolbox.framework */; };
+		D29F42C10F4ADFB2007F81D0 /* tick.caf in Resources */ = {isa = PBXBuildFile; fileRef = D29F42C00F4ADFB2007F81D0 /* tick.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		D29F427C0F4A2B6C007F81D0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
 		D29F42840F4A2F0C007F81D0 /* tock.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tock.caf; sourceTree = "<group>"; };
 		D29F428A0F4A2F34007F81D0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D29F42C00F4ADFB2007F81D0 /* tick.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tick.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D29F42C00F4ADFB2007F81D0 /* tick.caf */,
 				D29F42840F4A2F0C007F81D0 /* tock.caf */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -169,6 +172,7 @@
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				D29F42850F4A2F0C007F81D0 /* tock.caf in Resources */,
+				D29F42C10F4ADFB2007F81D0 /* tick.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
